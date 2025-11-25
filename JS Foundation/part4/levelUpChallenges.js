@@ -150,21 +150,21 @@ console.log(largeCities);
 
 // // console.log(availableTeas);
 
-
 let teaCollection = ["earl grey", "green tea", "chai", "oolong tea"];
 
 let availableTeas = [];
 
-teaCollection.forEach(function(tea){
-   if(tea === "chai"){
-     return;
-   }
-   availableTeas.push(tea);
-}
-  
-);
+teaCollection.forEach(function(tea) {
+      if(tea === "chai"){
+          return ;
+      }
+
+      availableTeas.push(tea);
+});
 
 console.log(availableTeas);
+
+
 
 
 /* 
@@ -172,20 +172,22 @@ console.log(availableTeas);
    Skip `"Sydney"` and store the other cities in a new array named `traveledCities`.
 */
 
-let myWorldCities = ["Berlin", "Tokyo", "Sydney", "Paris"];
 
+
+
+let myWorldCities = ["Berlin", "Tokyo", "Sydney", "Paris"];
 let traveledCities = [];
 
-myWorldCities.forEach(function(city){
-    if(city === "Sydney"){
-       return;
-    }
-
-    traveledCities.push(city);
+myWorldCities.forEach(function(city) {
+     if(city === "Sydney"){
+          return;
+     }
+     traveledCities.push(city);
 });
 
-
 console.log(traveledCities);
+
+
 /* 
 9. Write a `for` loop that iterates through the array `[2, 5, 7, 9]`. 
    Skip the value `7` and multiply the rest by 2. Store the results in a new array named `doubledNumbers`.
@@ -196,13 +198,12 @@ let myNumbers = [2, 5, 7, 9];
 
 let doubledNumbers = [];
 
-
 for(let i = 0; i < myNumbers.length; i++){
-   if(numbers[i] === 7){
-     continue;
-   }
+    if(numbers[i] === 7){
+       continue;
+    }
 
-   doubledNumbers.push(numbers[i] * 2);
+    doubledNumbers.push(numbers[i] * 2);
 }
 
 console.log(doubledNumbers);
@@ -216,7 +217,7 @@ console.log(doubledNumbers);
 let myTeas = ["chai", "green tea", "black tea", "jasmine tea", "herbal tea"];
 let shortTeas = [];
 
-for (const tea of myTeas) {
+for (const tea of  myTeas) {
      if(tea.length > 10){
        break;
      }

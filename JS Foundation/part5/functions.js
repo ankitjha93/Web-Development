@@ -3,15 +3,12 @@
 Store the result in a variable named `teaOrder`.
 */
 
-
-
-
 function makeTea(typeOfTea){
-   return `Making ${typeOfTea}`;
-
+    return `Making ${typeOfTea}`;
 }
 
 let teaOrder = makeTea("lemon tea");
+
 console.log(teaOrder);
 
 
@@ -20,20 +17,20 @@ console.log(teaOrder);
 Call `confirmOrder` from within `orderTea` and return the result.
 */
 
+
+
 function orderTea(teaType){
     function confirmedOrder(){
-       return `order confirmed for chai`;
+       return `order confirmed for ${teaType}`;
     }
     return confirmedOrder();
 }
 
 let orderConfirmation = orderTea("chai");
-
 /* 
 3. Write an arrow function named `calculateTotal` that takes two parameters: `price` and `quantity`. The function should return the total cost by multiplying the `price` and `quantity`. 
 Store the result in a variable named `totalCost`.
 */
-
 
 
 const calculateTotal = (price, quantity) => price * quantity;
@@ -47,9 +44,8 @@ Return the result of calling `makeTea`.
 */
 
 
-
 function makeTea(typeOfTea){
-   return `makeTea : ${typeOfTea}`;
+     return `makeTea : ${typeOfTea}`;
 }
 
 function processTeaOrder(teaFunction){
@@ -57,7 +53,6 @@ function processTeaOrder(teaFunction){
 }
 
 let order = processTeaOrder(makeTea);
-
 
 console.log(order);
 
@@ -77,15 +72,13 @@ Store the returned function in a variable named `teaMaker` and call it with `"gr
 // let result = teaMaker("green tea");
 // console.log(result);
 
-
 function createTeaMaker(name){
-  let score = 100;
-   return function(teaType){
-      return `Making ${teaType} ${score} ${name}`;
-   }
-};
+    return function(teaType){
+       return `Making ${teaType} ${name}`;
+    }
+}
 
 let teaMaker = createTeaMaker("ankit");
-
 let result = teaMaker("green tea");
-l
+
+
